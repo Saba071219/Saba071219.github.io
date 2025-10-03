@@ -1,0 +1,363 @@
+/*  Universal Selector - Reset all html elements to the following */
+* { 
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0;
+    border: 0;
+}
+
+/* set the html tag to max-width of the screen */
+html {
+    max-width: 100%;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+/* Header Section */
+
+header {
+    background-color: #228554;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+}
+
+
+/* Set image border-radius 50%*/
+.logo {
+     
+   border-radius: 60% ;
+    
+    
+}
+
+/* Set the width of the navigation 100% of the remaining space */
+.header-nav {
+    width: 100%;
+
+   
+}
+
+/* Set the unorder list to display flex and change flow to horizontal */
+/* move the content to the end and set the gap between children to 20px */
+.header-ul {
+    display: flex;
+    gap: 30px;
+ 
+
+   
+}
+.nav {
+  max-width:320px ;
+  object-fit: cover;
+  vertical-align: top;
+  
+
+}
+
+   
+ul {
+  
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+}
+
+
+/* Remove underline from links */
+a {
+    text-decoration: none;
+    color: rgb(210, 179, 6);
+    font-size: 18px;
+    text-align:right;
+    
+   
+
+}
+
+/* Pseuod-Class hover */
+a:hover {
+    border-bottom: 1px solid rgb(72, 231, 51);
+    box-shadow: -5px 5px 5px #cfa51a;
+    padding: 8px 14px;
+    background-color: #07512e;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px; 
+      
+
+
+}
+
+/* remove bullet point */
+li {
+    list-style-type:none;
+     max-width:320px ;
+ 
+  
+ 
+
+}
+
+.my_cover{
+    width: 100%;
+    height: 500p;
+}
+.story {
+    display: flex;
+    justify-content: center;
+    background-color: #104f34;
+    text-align: center;
+    color: rgb(196, 171, 30);
+    padding: 60px;
+
+}
+
+.story-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75%;
+    
+}
+
+.story p {
+    padding: 24px;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 28px;
+}
+
+.story h2 {
+    font-size: 30px;
+}
+
+.story h4 {
+    font-size: 24px;
+
+}
+
+.our-story {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100px;
+}
+
+.our-story hr {
+    background-color: rgb(18, 81, 12);
+    height: 1px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.our-story hr:last-of-type {
+    width: 97%;
+    margin-top: 5px;
+}
+.exterior {
+    height: 700px;
+}
+
+.exterior img {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: cover;    
+    
+}
+
+.bk-color-yellow {
+    background-color: #1e522c; 
+    color: white;
+}
+ 
+cite {
+    font-style: italic;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+/* End of main 1 */
+
+/* Contact Section */
+
+/* The Team Section */
+
+.teams {
+    background-color: #0d693a;
+    box-sizing: border-box;    
+}
+
+.teams-header {
+    position: relative;
+    padding: 2rem 0 0 0;
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 200;
+}
+
+.teams-header::after {
+    position: absolute;   
+    content:'';
+    bottom: -0.5rem;
+    width: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom: 2px solid rgb(167, 158, 4);
+}
+.team-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 4rem 0 2rem 0 ;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.team-pic {
+    width: 80%;
+    border-radius: 100%;
+}
+
+.team-name {
+    font-weight: bold;
+    padding: 2rem 0;
+    font-size: 2rem;
+}
+
+.team-desc {
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* The Team Section */
+
+
+/* Footer Section */
+
+.footer {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #af8917;
+    box-sizing: border-box;   
+    margin: 0;
+    padding: 0; 
+}
+
+.footer-header {
+    color: #275c27;
+    font-size: 2rem;
+    font-weight: 50; 
+    box-sizing: border-box;
+    margin: 0;
+    padding-top: 3rem;
+}
+
+.grey {
+    color: #09bfe8;
+}
+
+.footer-social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 1rem 0;
+}
+
+.fabf {
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+}
+
+.copyright {
+    margin: 0;
+    padding-bottom: 7rem;
+    color: #d4ae16;
+    box-sizing: border-box;
+    text-align: center;
+}
+/* Footer Section */
+/*vicit*/
+
+.visit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+    background-color: #848820;
+}
+
+.visit-us {
+    font-size: 2rem;
+    padding: 2rem 0;
+}
+
+.us-address, .p-address {
+    padding-bottom: 0.5rem;
+}
+
+.us-address {
+    padding-top: 1rem;
+}
+
+.more-info {
+    padding: 1rem 0 0.5rem 0;
+}
+
+.p-more-info {
+    text-align: justify;
+    padding-bottom: 1rem;
+}
+.centre {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.Lochquarry-bottem {
+    padding: 1rem 3rem;
+    background-color: #805c04;
+    color: #000000;
+    font-size: 1rem;
+    border: none;
+}
+
+/* Contact Section */
+/* Appointmente */
+
+ {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      max-width: 400px;
+      margin: auto;
+    }
+    input, button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      box-sizing: border-box;
+    }
+    #confirmation {
+      margin-top: 20px;
+      color: green;
+      font-weight: bold;
+    }
