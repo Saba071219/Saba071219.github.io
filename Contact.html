@@ -7,33 +7,34 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
+    <header class="site-header">
            <div class="logo">
-            <img src="Image/LOCHQUARRY banner 2-min.png" alt="Logo"width="1300" height="120">
-    
+            <img src="Image/LOCHQUARRY-min.png" alt="Logo" width="250" height="120">
+          </div>
+
+        <nav class="navbar">
+             <ul class="header-ul">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Landbased.html">Land Activete</a></li>
+                    <li><a href="waterbased.html">water Activete</a></li>
+                    <li><a href="Ropebased.html">Rope Activete</a></li>
+                    <li><a href="Contact.html">Contact us </a></li>                                                        
+             </ul>
+           </nav>
     </header>
-    <header>
-           <nav class="header-nav">
-            <ul class="header-ul">
-                <a href="index.html"><li>Home</li></a>
-                <a href="Land based.html"><li>Land Activete</li></a>
-                <a href="Rope based.html"><li> Rope Activete</li></a>
-                <a href="water based.html"><li> water Activete</li></a>
-                <a href="Contact.html"><li>Contact us</li></a>                                                                
-            </ul>
-        </nav>
-       </div>
-    </header>
-            <section>
-                <img src="image/LOC CENTER -.gif"width="100%" height="200px">
-            </section>
-             
-    <main>
-         <main class="teams">
+       <main>
+
+           <div class="hero">
+                <img src="Image/Hillwalking.jpg" alt="Lochquarry ceneter">
+                 <h2>Welcome to Lochquarry ceneter</h2>  
+           </div>
+  
+           <div class="teams">
                  <h1 class="teams-header">Meet the Team</h1>
-            <section class="team-row">
+           
+              <div class="team-row">
               <div class="team">
-                   <img class="team-pic" src="Image/Claire_Jack.jpeg" alt="Jordan">
+                   <img class="team-pic" src="Image/Claire_Jack.jpeg" alt="Lochquarry staff">
                     <h1 class="team-name"> Claire Jack</h1> 
                      <h3 class="team-position">Position: Centre Manager</h3>
                      <p class="team-faverite">Favourite Activity: Pole climb </p>
@@ -42,7 +43,7 @@
 
 
               <div class="team">
-                   <img class="team-pic" src="Image/Robbie_Elliot.jpeg" alt="Jordan">
+                   <img class="team-pic" src="Image/Robbie_Elliot.jpeg" alt="Lochquarry staff">
                     <h1 class="team-name"> Robbie Elliot</h1> 
                      <h3 class="team-position">Position: Senior Instructor (Land)</h3>
                      <p class="team-faverite">Favourite Activity: Hillwalking in the beautiful Scottish highlands </p>
@@ -50,64 +51,63 @@
               </div>
 
               <div class="team">
-                   <img class="team-pic" src="Image/Marion_Hunter.jpg" alt="Jordan">
+                   <img class="team-pic" src="Image/Marion_Hunter.jpg" alt=" Lochquarry staff">
                     <h1 class="team-name"> Marion Hunter</h1> 
                      <h3 class="team-position">Position: Centre Administrator</h3>
                      <p class="team-faverite">Favourite Activity: Making sure everyone 
                          a great time when the visit Lochquarry </p>
                      <p class="team-desc">Responsible : Making bookings and arranging activity slots for groups</p>
               </div>
-        </section>
-
+          </div>
+       </div>
           
      </main>
 
-              <section class="visit">      
+              <div class="visit">      
                  <h1 class="visit-us">   We're here to make you feel fabulous!</h1>
                  <h1 class="Lochquarry-bottem">Book your appointment with one of us</h1>
 
-                 <form id="appointmentForm">
-    <input type="text" id="name" placeholder="Your Name" required />
-    <input type="email" id="email" placeholder="Your Email" required />
-    <input type="date" id="date" required />
-    <input type="time" id="time" required />
-    <button type="submit">Book Appointment</button>
-  </form>
+             <form id="appointmentForm">
+               <input type="text" id="name" placeholder="Your Name" required >
+               <input type="email" id="email" placeholder="Your Email" required >
+               <input type="date" id="date" required >
+               <input type="time" id="time" required >
+               <button type="submit">Book Appointment</button>
+            </form>
 
-  <script>
-    const form = document.getElementById('appointmentForm');
-    const confirmation = document.getElementById('confirmation');
+       <script>
+              const form = document.getElementById('appointmentForm');
+              const confirmation = document.getElementById('confirmation');
 
-    form.addEventListener('submit', function (e) {
-      e.preventDefault(); // Prevent form from submitting normally
+              form.addEventListener('submit', function (e) {
+              e.preventDefault(); // Prevent form from submitting normally
 
-      const name = document.getElementById('name').value.trim();
-      const email = document.getElementById('email').value.trim();
-      const date = document.getElementById('date').value;
-      const time = document.getElementById('time').value;
+              const name = document.getElementById('name').value.trim();
+              const email = document.getElementById('email').value.trim();
+              const date = document.getElementById('date').value;
+             const time = document.getElementById('time').value;
 
-       if (!name || !email || !date || !time) {
-        confirmation.style.color = 'red';
-        confirmation.textContent = 'Please fill in all fields.';
-        return;
-      }
+         if (!name || !email || !date || !time) {
+          confirmation.style.color = 'red';
+          confirmation.textContent = 'Please fill in all fields.';
+         return
+        }
 
-      // Display confirmation
-      confirmation.style.color = 'green';
-      confirmation.textContent = Thank you, ${name}. Your appointment is booked for ${date} at ${time}.;
+          // Display confirmation
+         confirmation.style.color = 'grey'
+         confirmation.textContent = Thankyou; $:{name} Your*appointment; is* booked; $:{date} ;at* $*{time}.
 
-      // Reset form (optional)
-      form.reset();
-    });
-  </script>
+        // Reset form (optional)
+        form.reset();
+        })
+     </script>
 
+     </div>
 
+     <div class="exterior">
+                   <img src="Image/Nature_2-min.jpg" alt=" Lochquarry ceneter activities">
+             </div>
 
-               </section>
-
-         <section class="exterior">
-                   <img src="Image/Nature_2-min.jpg"photo of our nature>
-             </section>
      <footer class="footer">
                   <h2 class="footer-header"><span class="grey">Visit</span> Lochquarry Outdoor <span class="grey">center </span></h2>
                    <p> Our activities are very popular with youth groups including Scouts and Guides </p>
